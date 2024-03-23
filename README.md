@@ -26,39 +26,49 @@ This project is an Authentication system built using the MERN stack. It allows u
 Clone the repository:
 
 ```bash
-git clone https://github.com/your_username/mern-authentication-system.git
+git clone https://github.com/rahulshuvo/user-auth.git
 ```
 Navigate to the project directory:
 ```bash
-cd mern-authentication-system
+cd user-auth
 ```
 Install server dependencies:
 ```bash
+cd server
 npm install
 ```
 Navigate to the client directory:
 ```bash
+cd ..
 cd client
 ```
 Install client dependencies:
 ```bash
 npm install
 ```
-Go back to the project directory:
+Go back to the server directory:
 ```bash
 cd ..
+cd server
 ```
 Set up environment variables:
-Create a .env file in the project root and add the following:
+Create a .env file in the server root and add the following:
 ```bash
 PORT=5000
 MONGODB_URI=your_mongodb_uri
-JWT_SECRET=your_jwt_secret
+TOKEN_KEY=your_jwt_secret
 ```
 Replace your_mongodb_uri with your MongoDB connection URI and your_jwt_secret with a secret key for JWT.
 
 Run the development server:
 ```bash
+npm run dev
+```
+
+Run the client server:
+```bash
+cd ..
+cd client
 npm run dev
 ```
 
